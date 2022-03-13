@@ -23,7 +23,7 @@ describe('Controller: Coin', () => {
       const coin = await CoinController.getCoinByCode(coinCode);
 
       expect(coin.code).to.eq(coinCode);
-      expect(Object.keys(coin).length).to.eq(3);
+      expect(Object.keys(coin).length).to.eq(4);
     });
 
     it('should fail get coin by code', async () => {

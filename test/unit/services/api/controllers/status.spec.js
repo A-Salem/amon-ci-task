@@ -23,7 +23,7 @@ describe('Controller: Status', () => {
     await StatusController.get();
     const status = await StatusController.get();
 
-    expect(Object.keys(status).length).to.be.eq(4);
+    expect(Object.keys(status).length).to.be.eq(5);
     expect(status.status).to.eq('healthy');
     expect(status.app_name).to.eq(config.APP_NAME);
     expect(status.environment).to.eq(config.ENVIRONMENT);
